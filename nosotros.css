@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(168, 230, 168)
+}
+
+@font-face {
+    font-family: 'quesha';
+    src: url(fonts/Quesha.ttf) format('woff2')
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f7f8;
+    padding: 8px 10px;
+    margin: 0 15px;
+    border: 2px solid #5eda87;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.menu a:hover {
+    background-color: #333;
+    color: #5eda87;
+    border-color: #0c0c0c;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;;
+}
+body{
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    background-color: rgb(202, 235, 202);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url(Images/Header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+.logo{
+    margin-right: 10px;
+}
+.logo img {
+    width: 55%; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+}   
+.slogan{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.slogan h1 {
+    font-size: x-large;
+    margin: 0;
+    white-space: normal; 
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(83, 177, 116);
+}
+main {
+    font-family: 'quesha';
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    gap: 20px;
+}
+.lisset{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin: 2px;
+    border: none;
+    padding-top: 10px;
+}
+.liss{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    margin: 2px;
+    border: none;
+    padding-top: 10px;
+}
+.footerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    background-color: rgb(168, 230, 168);
+    height: 20vh;
+}
+.logofooter{
+    width: 60%;
+}
+.logoo{
+    display: flex;
+    grid-column: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.llama{
+    color: black;
+    line-height: 1; 
+    word-wrap: break-word; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center; 
+    font-size: 1.2em; 
+    white-space: nowrap;
+    margin-bottom: 10%; 
+    width: 100%; 
+}
+.redes{
+    grid-column: 2/3;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+    width: 40%;
+    padding-top: 20%;
+}
+.redess{
+    display: flex;
+    justify-content: space-around;
+    zoom: 1.8;
+}
+footer{
+    width: 100%;
+    background-color: rgb(168, 230, 168);
+    color: #f4f7f8;
+    text-align: center;
+    align-items: center;
+}
+footer img{
+    width: 2.5rem;
+}
+form{
+    padding: 20px;
+}
+.datos{
+    color: black;
+    margin-bottom: 2px;
+}
+.btn-primary {
+    background-color: #32c957 !important; 
+    border-color: #34aa79 !important;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.btn-primary:hover {
+    background-color: #00b38c;
+    border-color: #49ad5a;
+}
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 80%; 
+    }
+}

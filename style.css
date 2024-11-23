@@ -1,0 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'quesha';
+    src: url(fonts/Quesha.ttf) format('woff2')
+}
+html{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(168, 230, 168);
+}
+body{
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    background-color: rgb(202, 235, 202);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed
+}
+.menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+.menu a {
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f7f8;
+    padding: 8px 10px;
+    margin: 0 15px;
+    border: 2px solid #5eda87;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.menu a:hover {
+    background-color: #333;
+    color: #5eda87;
+    border-color: #0c0c0c;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url(Images/Header.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white; 
+}
+.logo{
+    margin-right: 10px;
+}
+.logo img {
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}   
+.slogan{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.slogan h1 {
+    font-size: x-large;
+    margin: 0;
+    white-space: normal;
+    text-align: center;
+    padding-top: 40px;
+    color: rgb(83, 177, 116);
+}
+main{
+    padding: 20px;
+}
+.introduccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px 10px 30px;
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+}
+section{
+     display: flex;
+     width: 50vh;
+     height: 430px;
+     margin: 0 auto;
+     margin-right: 5%;
+}
+section img{
+     width: 88px;
+     flex-grow: 1;
+     object-fit:cover ;
+     opacity: .8;
+     transition: .5s ease;
+}
+section img:hover{
+        cursor: pointer;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+}
+.introduccion1{
+    font-family: 'quesha';
+    font-size: 40px;
+    margin-left: 10%;
+}
+.recetas{
+    margin-top: auto;
+    text-align: center;
+}
+.recetas h2{
+    font-family: 'quesha';
+    font-size: 60px;
+}
+.recetas p{
+    font-family: 'quesha';
+    font-size: 30px;
+}
+.pregunta h2{
+    font-family: 'quesha';
+    font-size: 60px;
+    text-align: right;
+}
+.card-img-top{
+    height: 200px;
+}
+.card {
+    border: none; 
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.card-img-top {
+    border-bottom: 2px solid #f1f1f1;
+    object-fit: cover;
+    height: 180px;
+    width: 100%; 
+}
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold; 
+    color: #34dada; 
+    margin-bottom: 10px; 
+}
+.card-text {
+    font-size: 1rem;
+    color: #777; 
+    margin-bottom: 15px;
+    }
+.btn-primary {
+    background-color: #32c957 !important; 
+    border-color: #34aa79 !important;
+    padding: 10px 20px;
+    font-size: 1rem; 
+    border-radius: 25px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.btn-primary:hover {
+    background-color: #00b38c;
+    border-color: #49ad5a;
+}
+button.btn-primary {
+    background-color: #4CAF50; 
+    border-color: #4CAF50; 
+}
+button.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049; 
+}
+.pregunta{
+    margin-top: auto;
+    text-align: center;
+}
+.accordion-button {
+    background-color: #599918; 
+    color: #80a8d1;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-weight: bold; 
+    transition: all 0.3s ease;
+}
+.accordion-button:hover {
+    background-color: #61c286;
+    border-color: #f1f4f7; 
+}
+.accordion-button:not(.collapsed) {
+    background-color: #7cd10e;
+    color: #fff; 
+    border-color: #0056b3; 
+}
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+.accordion-body {
+    background-color: #f8f9fa;
+    color: #495057; 
+    border-top: 1px solid #007bff;
+    padding: 15px; 
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.5); 
+}
+button[aria-expanded="true"] {
+    background-color: green !important; 
+    color: white !important; 
+}
+
+.acordeon-imc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+}
+.accordion{
+    grid-column: 1/3; /* Indica que el header empieza desde la raya de la columna 1 hasta la raya de la columna 4 */
+    color: aliceblue;
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'quesha';
+    font-size: 60px;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+.calcular{
+    text-align: center;
+    margin-top: 8%;
+}
+#resultado {
+    margin-top: 20px;
+    }
+
+h2 {
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+#imcResultado {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#clasificacion {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.footerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    background-color: rgb(168, 230, 168);
+    height: 20vh;
+}
+.logofooter{
+    width: 60%;
+}
+.logoo{
+    display: flex;
+    grid-column: 1/2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.llama{
+    color: black;
+    line-height: 1;
+    word-wrap: break-word;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+    font-size: 1.2em; 
+    white-space: nowrap; 
+    margin-bottom: 10%; 
+    width: 100%; 
+}
+.redes{
+    grid-column: 2/3;
+    text-align: center;
+    align-items: center;
+    margin-top: 2%;
+    width: 40%;
+    padding-top: 20%;
+}
+.redess{
+    display: flex;
+    justify-content: space-around;
+    zoom: 1.8;
+}
+footer{
+    width: 100%;
+    background-color: rgb(168, 230, 168);
+    color: #f4f7f8;
+    text-align: center;
+    align-items: center;
+}
+footer img{
+    width: 2.5rem;
+}
+form{
+    padding: 20px;
+}
+
+.datos{
+    color: black;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    .logo img {
+        width: 80%; 
+    }
+    .card-img-top {
+        height: auto; 
+    }
+}
+
+
+/* Estilos para la página */
+
+
