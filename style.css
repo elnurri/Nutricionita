@@ -47,7 +47,6 @@ body{
     background-color: #333;
     color: #5eda87;
     border-color: #0c0c0c;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;;
 }
 header {
     position: relative;
@@ -391,9 +390,6 @@ form{
 }
 
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-    }
     .logo img {
         width: 80%; 
     }

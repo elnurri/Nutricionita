@@ -187,9 +187,6 @@ form{
     border-color: #49ad5a;
 }
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-    }
     .logo img {
         width: 80%; 
     }

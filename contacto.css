@@ -175,9 +175,6 @@ form{
 }
 
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-    }
     .logo img {
         width: 80%;
     }

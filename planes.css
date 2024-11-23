@@ -239,9 +239,6 @@ button.btn-primary:hover {
     margin-bottom: 2px;
 }
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-    }
     .logo img {
         width: 80%; 
     }
